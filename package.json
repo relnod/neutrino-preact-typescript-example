@@ -1,0 +1,30 @@
+{
+  "name": "neutrino-preact-typescript-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint --cache --format codeframe --ext mjs,jsx,js,ts,tsx src test"
+  },
+  "dependencies": {
+    "preact": "^10"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb": "^9.1.0",
+    "@neutrinojs/jest": "^9.1.0",
+    "@neutrinojs/preact": "^9.1.0",
+    "@types/jest": "^25.2.1",
+    "eslint": "^6",
+    "jest": "^25",
+    "neutrino": "^9.1.0",
+    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript#semver:^1.0.10",
+    "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint#semver:^1.0.5",
+    "typescript": "^3.8.3",
+    "webpack": "^4",
+    "webpack-cli": "^3",
+    "webpack-dev-server": "^3"
+  }
+}
