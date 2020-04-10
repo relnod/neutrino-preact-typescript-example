@@ -15,7 +15,17 @@ module.exports = {
       eslint: {
         baseConfig: {
           rules: {
-            'react/jsx-filename-extension': 'off'
+            'react/jsx-filename-extension': 'off',
+            'import/extensions': [
+              'error',
+              'ignorePackages',
+              {
+                'js': 'never',
+                'jsx': 'never',
+                'ts': 'never',
+                'tsx': 'never'
+              }
+            ]
           }
         }
       }
@@ -24,6 +34,11 @@ module.exports = {
       html: {
         title: 'neutrino-preact-typescript-example'
       },
+      babel: {
+        plugins: [
+           'transform-react-jsx',
+        ],
+      }
     }),
     jest(),
   ],

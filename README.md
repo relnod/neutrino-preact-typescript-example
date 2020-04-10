@@ -69,7 +69,17 @@ module.exports = {
       eslint: {
         baseConfig: {
           rules: {
-            'react/jsx-filename-extension': 'off'
+            'react/jsx-filename-extension': 'off',
+            'import/extensions': [
+              'error',
+              'ignorePackages',
+              {
+                'js': 'never',
+                'jsx': 'never',
+                'ts': 'never',
+                'tsx': 'never'
+              }
+            ]
           }
         }
       }
